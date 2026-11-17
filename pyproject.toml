@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+# build-system specifies that the package will be construct with setuptools
+[project]
+name = "finance-engine"
+version = "0.1.0"
+description = "Analyse de portefeuille et backtesting de stratégies d'investissement"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "numpy",
+    "yfinance",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+]
+
+# À activer plus tard, quand cli.py existera :
+# [project.scripts]
+# finance-engine = "finance_engine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

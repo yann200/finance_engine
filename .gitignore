@@ -1,0 +1,27 @@
+# Virtual environment
+fe_env
+
+# Python cache and build artefacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Project runtime files
+logs/
+*.db
+*.sqlite3
+
+# Secrets and local settings
+.env
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
