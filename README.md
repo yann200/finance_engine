@@ -3,9 +3,7 @@
 Mini-bibliothèque Python d'**analyse de portefeuille** et de **backtesting** de stratégies d'investissement.
  
 Elle récupère des prix de marché, les stocke dans une base SQL, calcule des indicateurs de performance et de risque, puis rejoue des stratégies sur l'historique pour les comparer à un benchmark.
- 
-> ⚠️ **Projet pédagogique.** Il ne constitue pas un conseil en investissement. Une performance passée ne garantit pas les performances futures.
- 
+
 ---
  
 ## Sommaire
